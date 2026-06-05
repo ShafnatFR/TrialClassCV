@@ -1,14 +1,18 @@
+---
+
 # Modul Kelas: Membuat CV Sederhana dengan HTML & CSS
 
-Pada praktikum kali ini, kita akan membuat halaman Curriculum Vitae (CV) sederhana. Pembuatan web ini terbagi menjadi dua tahap utama: menyusun kerangka konten menggunakan **HTML**, dan mempercantik tampilannya menggunakan **CSS**.
+Pada praktikum kali ini, kita akan membuat halaman *Curriculum Vitae* (CV) sederhana. Pembuatan web ini terbagi menjadi dua tahap utama: menyusun kerangka konten menggunakan **HTML**, dan mempercantik tampilannya menggunakan **CSS**.
 
-Persiapan Awal: Buatlah sebuah folder baru, lalu di dalamnya buat dua buah file bernama `index.html` dan `style.css`.
+**Persiapan Awal:** Buatlah sebuah folder baru, lalu di dalamnya buat dua buah file bernama `index.html` dan `style.css`.
+
+---
 
 ## Bagian 1: Menyusun Struktur dengan HTML (`index.html`)
 
 ### Langkah 1: Kerangka Dasar HTML
 
-Pertama, kita siapkan pondasi halaman web. Kode ini memberitahu browser bahwa kita menggunakan HTML5 dan menghubungkan file HTML kita dengan file CSS.
+Pertama, kita siapkan pondasi halaman web. Kode ini memberitahu *browser* bahwa kita menggunakan HTML5 dan menghubungkan file HTML kita dengan file CSS.
 
 ```html
 <!DOCTYPE html>
@@ -21,7 +25,7 @@ Pertama, kita siapkan pondasi halaman web. Kode ini memberitahu browser bahwa ki
 </head>
 <body>
     <div class="container">
-        </div>
+    </div>
 </body>
 </html>
 
@@ -102,7 +106,7 @@ Lanjutkan dengan menambahkan bagian proyek dan riwayat pendidikan menggunakan st
 
 ### Langkah 5: Menambahkan Label Keahlian (Skills)
 
-Untuk bagian keahlian, kita membungkus setiap skill menggunakan elemen `<span>` dengan class `skill-badge` agar nanti mudah dihias menjadi bentuk tombol/label menggunakan CSS.
+Untuk bagian keahlian, kita membungkus setiap *skill* menggunakan elemen `<span>` dengan *class* `skill-badge` agar nanti mudah dihias menjadi bentuk tombol/label menggunakan CSS.
 
 ```html
         <section class="section">
@@ -125,9 +129,9 @@ Untuk bagian keahlian, kita membungkus setiap skill menggunakan elemen `<span>` 
 
 Setelah kerangka HTML selesai, halamannya masih terlihat polos. Buka file `style.css` untuk mulai menghiasnya.
 
-### Langkah 6: Reset CSS dan Styling Background (Latar Belakang)
+### Langkah 6: Reset CSS dan Styling Background
 
-Langkah pertama dalam CSS adalah menghilangkan *margin* dan *padding* bawaan browser agar ukuran elemen lebih konsisten. Setelah itu, kita atur warna latar belakang halaman web.
+Langkah pertama dalam CSS adalah menghilangkan *margin* dan *padding* bawaan *browser* agar ukuran elemen lebih konsisten. Setelah itu, kita atur warna latar belakang halaman web.
 
 ```css
 /* Reset CSS dasar */
@@ -150,7 +154,7 @@ body {
 
 ### Langkah 7: Membuat Efek "Kertas" untuk CV
 
-Kita ingin CV ini terlihat seperti dokumen kertas di tengah layar. Class `.container` diberikan batas lebar (`max-width`), warna putih (`#fff`), serta sedikit efek bayangan (`box-shadow`).
+Kita ingin CV ini terlihat seperti dokumen kertas di tengah layar. *Class* `.container` diberikan batas lebar (`max-width`), warna putih (`#fff`), serta sedikit efek bayangan (`box-shadow`).
 
 ```css
 /* Kontainer utama menyerupai kertas A4/dokumen */
@@ -167,7 +171,7 @@ Kita ingin CV ini terlihat seperti dokumen kertas di tengah layar. Class `.conta
 
 ### Langkah 8: Merapikan Header dan Judul Seksi
 
-Agar informasi nama dan judul terlihat profesional, kita pusatkan posisinya dan tambahkan garis pemisah di bagian bawah header serta judul setiap section.
+Agar informasi nama dan judul terlihat profesional, kita pusatkan posisinya dan tambahkan garis pemisah di bagian bawah *header* serta judul setiap *section*.
 
 ```css
 /* Header Profil */
@@ -265,7 +269,7 @@ p {
 
 ### Langkah 10: Membentuk Elemen Badge untuk Keahlian
 
-Keahlian yang tadi dibungkus dengan `<span>` sekarang diubah menjadi elemen visual berbentuk kapsul (badge) dengan memberi lekukan sudut menggunakan `border-radius` serta memberikan efek interaktif saat kursor diarahkan ke atasnya (`:hover`).
+Keahlian yang tadi dibungkus dengan `<span>` sekarang diubah menjadi elemen visual berbentuk kapsul (*badge*) dengan memberi lekukan sudut menggunakan `border-radius` serta memberikan efek interaktif saat kursor diarahkan ke atasnya (`:hover`).
 
 ```css
 /* Kontainer untuk label keahlian */
