@@ -1,0 +1,155 @@
+/* Reset CSS dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Mengatur latar belakang halaman */
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+    padding: 40px 20px;
+}
+
+/* Kontainer utama menyerupai kertas A4/dokumen */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 40px 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Header Profil */
+header {
+    text-align: center;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+    letter-spacing: 0.5px;
+}
+
+header h2 {
+    color: #34495e;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    font-size: 0.95rem;
+    color: #7f8c8d;
+}
+
+/* Jarak antar seksi */
+.section {
+    margin-bottom: 30px;
+}
+
+/* Judul setiap seksi (Profil, Pengalaman, dll) */
+.section-title {
+    color: #2c3e50;
+    font-size: 1.3rem;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Konten di dalam seksi */
+.item {
+    margin-bottom: 20px;
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 8px;
+}
+
+.item-header h4 {
+    font-size: 1.15rem;
+    color: #2980b9;
+}
+
+.institution {
+    font-weight: 600;
+    color: #7f8c8d;
+    font-size: 0.95rem;
+}
+
+.item-details {
+    list-style-type: square;
+    margin-left: 20px;
+    color: #444;
+}
+
+.item-details li {
+    margin-bottom: 5px;
+}
+
+p {
+    color: #444;
+    text-align: justify;
+}
+
+/* Modifikasi jarak untuk item pendidikan */
+.edu-item {
+    margin-bottom: 10px;
+}
+
+/* Kontainer untuk label keahlian */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Desain label (badge) untuk keahlian */
+.skill-badge {
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: 1px solid #bdc3c7;
+    transition: all 0.3s ease;
+}
+
+.skill-badge:hover {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
+
+/* Media Query untuk membuat tampilan responsif di layar ponsel */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+    
+    .item-header {
+        flex-direction: column;
+    }
+    
+    .institution {
+        margin-top: 4px;
+        font-size: 0.9rem;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+}
