@@ -1,5 +1,3 @@
----
-
 # Modul Kelas: Membuat CV Sederhana dengan HTML & CSS
 
 Pada praktikum kali ini, kita akan membuat halaman *Curriculum Vitae* (CV) sederhana. Pembuatan web ini terbagi menjadi dua tahap utama: menyusun kerangka konten menggunakan **HTML**, dan mempercantik tampilannya menggunakan **CSS**.
@@ -169,7 +167,7 @@ Kita ingin CV ini terlihat seperti dokumen kertas di tengah layar. *Class* `.con
 
 ```
 
-### Langkah 8: Merapikan Header dan Judul Seksi
+### Langkah 8: Merapikan Header dan Judul section
 
 Agar informasi nama dan judul terlihat profesional, kita pusatkan posisinya dan tambahkan garis pemisah di bagian bawah *header* serta judul setiap *section*.
 
@@ -201,7 +199,7 @@ header h2 {
     color: #7f8c8d;
 }
 
-/* Jarak antar seksi dan Judul */
+/* Jarak antar section dan Judul */
 .section {
     margin-bottom: 30px;
 }
@@ -223,7 +221,7 @@ header h2 {
 Untuk membuat posisi "Nama Posisi/Jurusan" berada di sebelah kiri dan "Nama Institusi" di sebelah kanan dalam satu baris yang sama, kita memanfaatkan `display: flex` dan `justify-content: space-between`.
 
 ```css
-/* Konten di dalam seksi */
+/* Konten di dalam section */
 .item {
     margin-bottom: 20px;
 }
